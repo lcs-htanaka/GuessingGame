@@ -4,7 +4,6 @@
 //
 //  Created by 田中宏貴 on 2024-01-30.
 //
-
 import SwiftUI
 
     struct GameView: View {
@@ -22,6 +21,7 @@ import SwiftUI
         
         // The list of numbers the user has guessed so far
         @State var guessesMade: [Int] = []
+
         
         // MARK: Computed properties
         var body: some View {
@@ -97,6 +97,15 @@ import SwiftUI
             // When should they guess higher?
             // When should then guess lower?
             // FILL IN THIS CODE
+          
+            if target > selectedNumber {
+                print("a is greater")
+            } else {
+                print("b is greater")
+            }
+            
+            
+            
             
             // Save the user's guesses
             guessesMade.append(selectedNumber)
